@@ -1,0 +1,62 @@
+baseurl = "/"
+paginate = "2" # Number of posts per page
+theme = "mainroad"
+disqusShortname = "" # Enable comments by entering your Disqus shortname
+googleAnalytics = "" # Enable Google Analytics by entering your tracking id
+
+DefaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+[languages ]
+  [languages.ko]
+    title = "Tibyte"
+    languageCode = "ko-kr"
+    contentDir = "content/ko"
+    languageName = "한국어"
+    [languages.ko.Params]
+      disableLangMsg = "이 페이지는 한국어 번역이 없습니다"
+      mainpageLinkMsg = "(홈으로)"
+      mainpageLink = "/ko"
+      dateformat = "2006-01-02"
+      readmore = true
+  [languages.en]
+    title = "Tibyte"
+    languageCode = "en-us"
+    contentDir = "content/en"
+    languageName = "English"
+    [languages.en.Params]
+      disableLangMsg = "No translation for the page"
+      mainpageLinkMsg = "(home)"
+      mainpageLink = "/en"
+      dateformat = "01 Feb 2006"
+
+[Author]
+  name = "Tibyte"
+  bio = "Software Engineer"
+  avatar = "img/avatar.png"
+
+[Params]
+  subtitle = "site" # Subtitle of your site
+  description = "Tibyte's blog"
+  opengraph = true
+  twitter_cards = false
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true
+  post_navigation = true
+  post_meta = ["date", "categories"]
+  dateformat = "02 Jan 2006"
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = "right" # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "taglist"]
+
+[Params.widgets]
+  recent_num = 5
+  tags_counter = true
+
+[Taxonomies]
+  tag = "tags"
+  series = "series"
