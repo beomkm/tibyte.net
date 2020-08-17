@@ -1,0 +1,104 @@
+# General
+- id: read_more
+  translation: "더보기…"
+
+- id: menu_label
+  translation: "메뉴"
+
+- id: sidemenu_title
+  translation: "메뉴"
+
+- id: translations
+  translation: "번역"
+
+- id: no_tranlation
+  translation: "이 페이지는 한국어 번역이 없습니다"
+
+# Post meta
+- id: meta_lastmod
+  translation: "수정일"
+
+- id: meta_translations
+  translation: "번역"
+
+# Table of Contents
+- id: toc_title
+  translation: "페이지 콘텐트"
+
+# Post nav
+- id: post_nav_prev
+  translation: "이전글"
+
+- id: post_nav_next
+  translation: "다음글"
+
+# Authorbox
+- id: authorbox_name
+  translation: "{{ .Count }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "경고"
+
+- id: sidebar_recommendation
+  translation: "하나 이상의 사이드바 위젯을 활성화하세요."
+
+# Search widget
+- id: search_placeholder
+  translation: "찾기..."
+
+# Languages widget
+- id: languages_title
+  translation: "다른 언어"
+
+# Categories widget
+- id: categories_title
+  translation: "카테고리"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "최근글"
+
+# Social widget
+- id: social_title
+  translation: "소셜"
+
+# Tags List widget
+- id: tags_title
+  translation: "태그"
+
+# Series List widget
+- id: series_title
+  translation: "시리즈"
+
+# Footer
+- id: footer_credits
+  translation:
+    "Generated with <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
+
+# 404
+- id: 404_title
+  translation: "404. 페이지를 찾을 수 없습니다."
+
+- id: 404_text
+  translation:
+    "페이지가 존재하지 않거나, 이동되었거나, 삭제되었습니다. 검색이나 링크를 통해 접근해 보세요."
+
+- id: 404_linktext
+  translation: "메인으로"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "글이 없습니다!"
+
+- id: noposts_warning_description
+  translation:
+    "<b>content</b> 폴더 아래의 폴더(섹션) 안에 글을 올리면 여기에 글이 나타납니다. \
+    기본 설정으로는 글이 가장 많은 한 개의 섹션만 메인 페이지에 표시됩니다."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Tip:</b> config 파일에서 \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+    파라미터를 설정하여 섹션들을 원하는 만큼 보이게 할 수 있습니다."

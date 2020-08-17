@@ -1,0 +1,43 @@
+<header class="header">
+	<div class="container">
+		<div class="logo">
+			<div class="languages">
+				{{ $scratch := newScratch }}
+				{{ range .Site.Home.AllTranslations  }}
+					{{ if ne .Language $.Language}}
+						{{ $scratch.SetInMap "refs" .Language.LanguageName . }}
+					{{ end }}
+				{{ end }}
+				{{ range .Translations }}
+					{{ $scratch.SetInMap "links" .Language.LanguageName .Permalink }}	
+				{{ end }}
+
+				{{ range $k, $v := ($scratch.Get "refs") }}
+					<li>
+						{{ if isset ($scratch.Get "links") $k }}
+							<a class="lang_exists" href="{{ index ($scratch.Get "links") $k }}">
+								{{ $k }}
+							</a> 
+						{{ else }}
+							<span class="lang_not_exists">
+								{{ $k }}
+								<span class="tooltip_text">
+									{{ (index ($scratch.Get "refs") $k).Language.Params.DisableLangMsg }}
+									<a href="{{ (index ($scratch.Get "refs") $k).Language.Params.mainpageLink }}">
+										{{ (index ($scratch.Get "refs") $k).Language.Params.mainpageLinkMsg }}
+									</a>
+								</span>
+							</span>
+						{{ end }}
+					</li>
+				{{ end }}
+			</div>
+			<a class="logo__link" href="{{ "" | relLangURL }}" title="{{ .Site.Title }}" rel="home">
+				<div class="logo__title">{{ .Site.Title }}</div>
+				{{ with .Site.Params.subtitle }}<div class="logo__tagline">{{ . }}</div>{{ end }}
+				<!-- {{ .Language.LanguageName }} -->
+			</a>
+		</div>
+		{{ partial "menu.html" . }}
+	</div>
+</header>

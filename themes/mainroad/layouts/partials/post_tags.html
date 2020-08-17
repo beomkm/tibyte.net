@@ -1,0 +1,11 @@
+{{- if .Params.tags }}
+<div class="post__tags tags clearfix">
+	{{- range .Params.tags }}
+	<span>
+		<a href="{{ "tags/" | relLangURL }}{{ . | urlize }}/" rel="tag">
+			{{- . -}}
+		</a>
+	</span>
+	{{- end }}
+</div>
+{{- end }}
