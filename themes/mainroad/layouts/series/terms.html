@@ -6,10 +6,11 @@
             {{ .Content }}
             {{ range .Data.Terms.ByCount }}
                 <li>
-                    {{ .Name }}({{ .Count }})
+                    <a href="{{ "series/" | relLangURL }}{{ .Name }}" rel="series">{{ .Name }} ({{ .Count }})</a>
                 </li>
             {{ end }}
         </div>
     </div>
 </div>
 {{ end }}
+
