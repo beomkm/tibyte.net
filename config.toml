@@ -4,12 +4,12 @@ theme = "mainroad"
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
-DefaultContentLanguage = "en"
+DefaultContentLanguage = "ko"
 defaultContentLanguageInSubdir = true
 
 [languages ]
   [languages.ko]
-    title = "Tibyte"
+    title = "tibyte's blog"
     languageCode = "ko-kr"
     contentDir = "content/ko"
     languageName = "한국어"
@@ -20,7 +20,7 @@ defaultContentLanguageInSubdir = true
       dateformat = "2006-01-02"
       readmore = true
   [languages.en]
-    title = "Tibyte"
+    title = "tibyte's blog"
     languageCode = "en-us"
     contentDir = "content/en"
     languageName = "English"
@@ -31,12 +31,12 @@ defaultContentLanguageInSubdir = true
       dateformat = "01 Feb 2006"
 
 [Author]
-  name = "Tibyte"
+  name = "Beomyeong Kim"
   bio = "Software Engineer"
   avatar = "img/avatar.png"
 
 [Params]
-  subtitle = "site" # Subtitle of your site
+  subtitle = "IT Tech & Travels" # Subtitle of your site
   description = "Tibyte's blog"
   opengraph = true
   twitter_cards = false
