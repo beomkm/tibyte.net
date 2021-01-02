@@ -7,7 +7,7 @@
             {{ .Content }}
         </div>
         {{- range .Paginator.Pages }}
-            {{- .Render "light" }}
+            {{- .Render "summary" }}
         {{- end }}
 
         <div class="col-12">

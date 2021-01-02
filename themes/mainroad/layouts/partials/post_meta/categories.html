@@ -1,7 +1,7 @@
 {{- $taxo := "tags" -}}
 {{- with .Param $taxo -}}
 <div class="meta__item-categories meta__item">
-	{{- partial "svg/category.svg" (dict "class" "meta__icon") -}}
+	{{- partial "svg/tag.svg" (dict "class" "meta__icon") -}}
 	<span class="meta__text">
 		{{- range $index, $tag := . }}
 			{{- $url := urls.Parse ($tag | urlize) -}}
@@ -19,7 +19,7 @@
 {{- $taxo := "series" -}}
 {{- with .Param $taxo -}}
 <div class="meta__item-categories meta__item">
-	{{- partial "svg/category.svg" (dict "class" "meta__icon") -}}
+	{{- partial "svg/series.svg" (dict "class" "meta__icon") -}}
 	<span class="meta__text">
 		{{- range $index, $series := . }}
 			{{- $url := urls.Parse ($series | urlize) -}}
