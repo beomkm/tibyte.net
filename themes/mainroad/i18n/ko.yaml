@@ -23,7 +23,7 @@
 
 # Table of Contents
 - id: toc_title
-  translation: "페이지 콘텐트"
+  translation: "목차"
 
 # Post nav
 - id: post_nav_prev
@@ -34,7 +34,7 @@
 
 # Authorbox
 - id: authorbox_name
-  translation: "{{ .Count }}"
+  translation: "About {{ .Count }}"
 
 # Sidebar
 - id: sidebar_warning
@@ -69,7 +69,7 @@
 
 # Series List widget
 - id: series_title
-  translation: "시리즈"
+  translation: "시리즈 글"
 
 # Footer
 - id: footer_credits

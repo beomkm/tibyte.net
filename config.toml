@@ -51,7 +51,7 @@ defaultContentLanguageInSubdir = true
   list = "right"   # Configure layout for list pages
   single = "right" # Configure layout for single pages
   # Enable widgets in given order
-  widgets = ["search", "recent", "taglist"]
+  widgets = ["search", "recent", "taglist", "serieslist"]
 
 [Params.widgets]
   recent_num = 5
