@@ -827,6 +827,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	font-weight: 700;
 }
 
+.authorbox__writtenby {
+	font-size: 15px;
+	font-size: 0.9rem;
+	font-weight: 600;
+	color: #999;
+}
+
 /* List content */
 .list__item {
 	padding-bottom: 20px;

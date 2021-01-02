@@ -12,6 +12,8 @@
 	{{- end }}
 	{{- with .Site.Author.name }}
 	<div class="authorbox__header">
+		<div class="authorbox__writtenby">Written by</div>
+		<!-- <span class="authorbox__name">{{ T "authorbox_name" . }}</span> -->
 		<span class="authorbox__name">
 			<a href={{ "about" | relLangURL }}>{{ T "authorbox_name" . }}</a>
 		</span>

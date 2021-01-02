@@ -4,8 +4,13 @@
 		<span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
 	</button>
 	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="{{ .Site.LanguagePrefix }}" >
+				<span class="menu__text">Home</span>
+			</a>
+		</li>
 		{{- $currentNode := . }}
-		{{- range .Site.Menus.main }}
+		{{- range .Site.Menus.main.ByWeight }}
 		{{- if .Name }}
 		<li class="menu__item{{ if or ($currentNode.IsMenuCurrent "main" .) ($currentNode.HasMenuCurrent "main" .) }} menu__item--active{{ end }}">
 			<a class="menu__link" href="{{ .URL }}">
