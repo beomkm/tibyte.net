@@ -6,7 +6,7 @@ thumbnail: "img/placeholder.png"
 tags:
   - "example_tag2"
 series:
-  - "Spark 산책"
+  - "Spark Tutorials"
 ---
 
 예시글
