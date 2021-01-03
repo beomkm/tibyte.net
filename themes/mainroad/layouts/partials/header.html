@@ -14,10 +14,22 @@
 
 				{{ range $k, $v := ($scratch.Get "refs") }}
 					<li>
-						{{ if isset ($scratch.Get "links") $k }}
-							<a class="lang_exists" href="{{ index ($scratch.Get "links") $k }}">
-								{{ $k }}
-							</a> 
+						{{ if ($scratch.Get "links") }}
+							{{ if (isset ($scratch.Get "links") $k) }}
+								<a class="lang_exists" href="{{ index ($scratch.Get "links") $k }}">
+									{{ $k }}
+								</a> 
+							{{ else }}
+								<span class="lang_not_exists">
+									{{ $k }}
+									<span class="tooltip_text">
+										{{ (index ($scratch.Get "refs") $k).Language.Params.DisableLangMsg }}
+										<a href="{{ (index ($scratch.Get "refs") $k).Language.Params.mainpageLink }}">
+											{{ (index ($scratch.Get "refs") $k).Language.Params.mainpageLinkMsg }}
+										</a>
+									</span>
+								</span>
+							{{ end }}
 						{{ else }}
 							<span class="lang_not_exists">
 								{{ $k }}

@@ -63,3 +63,8 @@ defaultContentLanguageInSubdir = true
 [Taxonomies]
   tag = "tags"
   series = "series"
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5
