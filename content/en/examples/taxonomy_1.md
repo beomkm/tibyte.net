@@ -6,4 +6,4 @@ tags:
   - "example"
 ---
 
-Example Post
+Example English Post
